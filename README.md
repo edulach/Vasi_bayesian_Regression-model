@@ -55,8 +55,8 @@ Priors for the parameters in stan.
 ```r
 model_files <- list(
   probit = "models/stan_probitN.stan",#stan_probitN_mixed_loc #stan_probitN_mixed_loc_dis
-  #beta = "models/stan_beta.stan",
-  #simplex = "models/stan_simplex.stan"
+  beta = "models/stan_beta.stan",
+  simplex = "models/stan_simplex.stan"
 )
 ```
 
