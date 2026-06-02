@@ -69,4 +69,21 @@ Priors for the parameters in stan.
 
 These settings can be modified if needed. The model also computes the criteria WAIC and LOO from loo package, 
 , as well as EAIC and EBIC. All results, including the estimates obtained from the selected model, will be saved in the results folder.
+
+```r
+# Save criteria to CSV for this model
+    criteria_df <- data.frame(
+      model = model_name,
+      waic = ifelse(is.null(model_criteria$waic_value), NA, model_criteria$waic_value),
+      waic_se = ifelse(is.null(model_criteria$waic_se), NA, model_criteria$waic_se),
+      loo = ifelse(is.null(model_criteria$loo_value), NA, model_criteria$loo_value),
+      loo_se = ifelse(is.null(model_criteria$loo_se), NA, model_criteria$loo_se),
+      eaic = model_criteria$eaic,
+      ebic = model_criteria$ebic
+    )
+    
+    criteria_path <- file.path(results_dir, paste0("criteria_", model_name, ".csv"))
+    write.csv(criteria_df, criteria_path, row.names = FALSE)
+    cat("Criteria saved:", criteria_path, "\n")
+```
    
