@@ -37,7 +37,7 @@ Extreme poverty levels
 
 The Human Development Index (HDI) by municipality.
 
--codes: it contains the functions.R for reading the dataset, which can be in format .csv, .txt, .xls, and .xlsx.
+-codes: it contains the functions.R for reading the dataset in main.probit.R and main.probit.mixed.R, which can be in format .csv, .txt, .xls, and .xlsx.
 - models: This folder contains the codes in stan, which includes for Beta, Simplex and Probit-Normal as well as the codes
  for Mixed regression Probit-Normal model introducing random effects in mean and dispersion parameters.
 
