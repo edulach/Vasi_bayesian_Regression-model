@@ -44,13 +44,7 @@ The Human Development Index (HDI) by municipality.
 
 ## Instructions for Running R and RStan Codes
 
-Open main.probit.R in R and specify the dataset to be used. The dataset must follow the format defined in the datasets folder. Once configured, run the script.
-The default Stan model settings are preconfigured as: 
-
-iter = 5000
-warmup  = 2500
-chains = 1
-Priors for the parameters in stan.
+Open main.probit.R  or main.probit.mixed.R in R and specify the dataset to be used. The dataset must follow the format defined in the datasets folder. Once configured, run the script considering the models below respectively.
 
 ```r
 model_files <- list(
@@ -64,6 +58,14 @@ model_files <- list(
   probit = "models/stan_probitN_mixed_loc.stan"#stan_probitN_mixed_loc_dis
 )
 ```
+
+The default Stan model settings are preconfigured as: 
+
+iter = 5000
+warmup  = 2500
+chains = 1
+Priors for the parameters in stan.
+
 
 These settings can be modified if needed. The model also computes the criteria WAIC and LOO from loo package, 
 , as well as EAIC and EBIC. All results, including the estimates obtained from the selected model, will be saved in the results folder.
