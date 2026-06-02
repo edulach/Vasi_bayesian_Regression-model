@@ -8,7 +8,8 @@ Statistics at the Institute of Mathematical and Computer Sciences of the Univers
 
 Corresponding Authors: Eduardo Lachos Olivares: velo28@usp.br 
 
-This material serves as a supplementary resource to the paper "A New Mean-Dispersion Bounded Mixed Regression Model"
+This material serves as a supplementary resource to the paper "A New Mean-Dispersion Bounded Mixed Regression Model". The Probit-Normal model is particularly well-suited for situations in which the variable of interest is continuous and is bounded within the interval (0,1), and in which explanatory variables are incorporated through a regression structure.
+
 ## Previous installations
 
 - Running the scripts requires the STAN software, which is installed via the RStan package. Installation instructions can be found in:
