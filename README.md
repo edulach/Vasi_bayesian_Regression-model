@@ -49,6 +49,8 @@ The default Stan model settings are preconfigured as:
 iter = 5000
 warmup  = 2500
 chains = 1
-These settings can be modified if needed. The model also computes the criteria WAIC and LOO from \texttt{loo} package, 
+Priors for the parameters in stan.
+
+These settings can be modified if needed. The model also computes the criteria WAIC and LOO from loo package, 
 , as well as EAIC and EBIC. All results, including the estimates obtained from the selected model, will be saved in the results folder.
    
