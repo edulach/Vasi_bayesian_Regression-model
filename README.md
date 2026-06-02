@@ -52,6 +52,13 @@ warmup  = 2500
 chains = 1
 Priors for the parameters in stan.
 
+\`\`\`python
+def greet(name):
+    print(f"Hello, {name}!")
+
+greet("World")
+\`\`\`
+
 These settings can be modified if needed. The model also computes the criteria WAIC and LOO from loo package, 
 , as well as EAIC and EBIC. All results, including the estimates obtained from the selected model, will be saved in the results folder.
    
