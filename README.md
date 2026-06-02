@@ -19,11 +19,22 @@ A supplementary guide is available at: [https://www.jstatsoft.org/index.php/jss/
 
 The project includes the following files and folders:
 - main.probit.R: This script contains the code to read the data from the file datasets. It utilizes two primary datasets:
-data_poverty_mg.csv
-datapov_peru.csv
+*data_poverty_mg.csv
+*datapov_peru.csv
 
-- datasets: This folder contains the data of poverty from Mato Grosso(MG) in 2010 with two variables Proportion of out-of-school children aged 6–14
-  and the respective Human development indicator by municipality, and data of poverty from regions of Peru with the extreme poverty and the Human development indicator by municipality.
+-datasets:  
+This folder contains poverty data from Mato Grosso (MG), Brazil, for 2010, including two variables:
+
+The proportion of out-of-school children aged 6–14
+
+The corresponding Human Development Index (HDI) by municipality
+
+It also includes poverty data from regions of Peru, covering:
+
+Extreme poverty levels
+
+The Human Development Index (HDI) by municipality.
+
 -codes: it contains the functions.R for reading the dataset, which can be in format .csv, .txt, .xls, and .xlsx.
 - models: This folder contains the codes in stan, which includes for Beta, Simplex and Probit-Normal as well as the codes
  for Mixed regression Probit-Normal model introducing random effects in mean and dispersion parameters.
