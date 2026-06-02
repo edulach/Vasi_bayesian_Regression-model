@@ -18,7 +18,9 @@ A supplementary guide is available at: [https://www.jstatsoft.org/index.php/jss/
 ## File description:
 
 The project includes the following files and folders:
-- main.probit.R: This script contains the code to read the data from the file datasets. It utilizes two primary datasets:
+- main.probit.R: This script contains the code to read the data from the file datasets.
+- main.probit.mixed.R: This script contains the code to read the data considering random effects. 
+   It utilizes two primary datasets:
 *data_poverty_mg.csv
 *datapov_peru.csv
 
