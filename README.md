@@ -53,10 +53,7 @@ chains = 1
 Priors for the parameters in stan.
 
 \`\`\`r
-# Calculate mean
-numbers <- c(10, 20, 30, 40, 50)
-mean_value <- mean(numbers)
-print(paste("Mean:", mean_value))
+install.packages(c("ggplot2", "dplyr", "tidyr"))
 \`\`\`
 
 These settings can be modified if needed. The model also computes the criteria WAIC and LOO from loo package, 
