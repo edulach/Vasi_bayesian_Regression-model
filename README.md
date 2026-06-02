@@ -22,7 +22,7 @@ The project includes the following files and folders:
 *data_poverty_mg.csv
 *datapov_peru.csv
 
--datasets:  
+- datasets:  
 This folder contains poverty data from Mato Grosso (MG), Brazil, for 2010, including two variables:
 
 The proportion of out-of-school children aged 6–14
