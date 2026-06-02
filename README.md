@@ -14,7 +14,7 @@ This material serves as a supplementary resource to the paper "A New Mean-Disper
 
 - Running the scripts requires the STAN software, which is installed via the RStan package. Installation instructions can be found in:
 Guo, J., Gabry, J., Goodrich, B., & Weber, S. (2020). Package ‘rstan’. URL https://cran. r―project.
-A supplementary guide is available at: [https://www.jstatsoft.org/index.php/jss/article/view/v012i03/33])
+A supplementary guide is available at: [https://www.jstatsoft.org/index.php/jss/article/view/v012i03/33]) and [https://mc-stan.org/docs/2_21/stan-users-guide-2_21.pdf
 
 ## File description:
 
