@@ -53,7 +53,11 @@ chains = 1
 Priors for the parameters in stan.
 
 ```r
-install.packages(c("ggplot2", "dplyr", "tidyr"))
+model_files <- list(
+  probit = "models/stan_probitN.stan",#stan_probitN_mixed_loc #stan_probitN_mixed_loc_dis
+  #beta = "models/stan_beta.stan",
+  #simplex = "models/stan_simplex.stan"
+)
 ```
 
 These settings can be modified if needed. The model also computes the criteria WAIC and LOO from loo package, 
