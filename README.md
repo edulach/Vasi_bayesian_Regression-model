@@ -39,8 +39,8 @@ Extreme poverty levels
 The Human Development Index (HDI) by municipality.
 
 -codes: it contains the functions.R for reading the dataset in main.vasi.R and main.vasi.mixed.R, which can be in format .csv, .txt, .xls, and .xlsx.
-- models: This folder contains the codes in stan, which includes for Beta, Simplex and Vasi-Normal as well as the codes
- for Mixed regression Vasi-Normal model introducing random effects in mean and dispersion parameters.
+- models: This folder contains the codes in stan, which includes for Beta, Simplex and Vasi as well as the codes
+ for Mixed regression Vasi model introducing random effects in mean and dispersion parameters.
 
 ## Instructions for Running R and RStan Codes
 
