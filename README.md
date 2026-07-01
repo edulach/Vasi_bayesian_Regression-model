@@ -1,4 +1,4 @@
-# A New Mean-Dispersion Bounded Mixed Regression Model
+# Vasi Bounded Mixed Regression Model
 Victor Eduardo Lachos Olivares <sup>1</sup> and Jorge Luis Bazán Guzmán<sup>2</sup>Catalina B. García-García<sup>3</sup>
 
 <sup>1</sup>Department of Statistics at the Federal University of São Carlos (UFSCar) and the Department of Applied Mathematics and 
@@ -8,7 +8,7 @@ Statistics at the Institute of Mathematical and Computer Sciences of the Univers
 
 Corresponding Authors: Eduardo Lachos Olivares: velo28@usp.br 
 
-This material serves as a supplementary resource to the paper "A New Mean-Dispersion Bounded Mixed Regression Model". The Probit-Normal model is particularly well-suited for situations in which the variable of interest is continuous and is bounded within the interval (0,1), and in which explanatory variables are incorporated through a regression structure.
+This material serves as a supplementary resource to the paper "Vasi Bounded Mixed Regression Model". The Vasi model is particularly well-suited for situations in which the variable of interest is continuous and is bounded within the interval (0,1), and in which explanatory variables are incorporated through a regression structure through Bayesian framework.
 
 ## Previous installations
 
@@ -19,8 +19,8 @@ A supplementary guide is available at: [https://www.jstatsoft.org/index.php/jss/
 ## File description:
 
 The project includes the following files and folders:
-- main.probit.R: This script contains the code to read the data from the file datasets.
-- main.probit.mixed.R: This script contains the code to read the data considering random effects. 
+- main.vasi.R: This script contains the code to read the data from the file datasets.
+- main.vasi.mixed.R: This script contains the code to read the data considering random effects. 
    It utilizes two primary datasets:
 *data_poverty_mg.csv
 *datapov_peru.csv
@@ -38,24 +38,24 @@ Extreme poverty levels
 
 The Human Development Index (HDI) by municipality.
 
--codes: it contains the functions.R for reading the dataset in main.probit.R and main.probit.mixed.R, which can be in format .csv, .txt, .xls, and .xlsx.
-- models: This folder contains the codes in stan, which includes for Beta, Simplex and Probit-Normal as well as the codes
- for Mixed regression Probit-Normal model introducing random effects in mean and dispersion parameters.
+-codes: it contains the functions.R for reading the dataset in main.vasi.R and main.vasi.mixed.R, which can be in format .csv, .txt, .xls, and .xlsx.
+- models: This folder contains the codes in stan, which includes for Beta, Simplex and Vasi-Normal as well as the codes
+ for Mixed regression Vasi-Normal model introducing random effects in mean and dispersion parameters.
 
 ## Instructions for Running R and RStan Codes
 
-Open main.probit.R  or main.probit.mixed.R in R and specify the dataset to be used. The dataset must follow the format defined in the datasets folder. Once configured, run the script considering the models below respectively.
+Open main.vasi.R  or main.vasi.mixed.R in R and specify the dataset to be used. The dataset must follow the format defined in the datasets folder. Once configured, run the script considering the models below respectively.
 
 ```r
 model_files <- list(
-  probit = "models/stan_probitN.stan",#stan_probitN_mixed_loc #stan_probitN_mixed_loc_dis
+  vasi = "models/stan_vasi.stan",#stan_vasi_mixed_loc #stan_vasi_mixed_loc_dis
   beta = "models/stan_beta.stan",
   simplex = "models/stan_simplex.stan"
 )
 ```
 ```r
 model_files <- list(
-  probit = "models/stan_probitN_mixed_loc.stan"#stan_probitN_mixed_loc_dis
+  vasi = "models/stan_vasi_mixed_loc.stan"#stan_vasi_mixed_loc_dis
 )
 ```
 
